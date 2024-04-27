@@ -8,6 +8,13 @@
     --text-black-700: #504e70;
     --box-shadow-effect-100: 0 0 20px rgba(48, 46, 77, 0.15);
 }
+body.dark{
+    --bg-black-900: #151515;
+    --bg-black-100: #222222;
+    --bg-black-50: #393939;
+    --text-black-900: #f9f9f9;
+    --text-black-700: #e9e9e9;
+}
 *{
     margin: 0;
     padding: 0;
@@ -630,4 +637,49 @@ h3.my-profession{
 .contact .contact-form .btn{
     height: 50px;
     padding: 0 50px;
+}
+
+
+/*media queries*/
+
+@media (max-width:1199px){
+    .aside{
+        left: -270px;
+    }
+    .main-content{
+        padding-left: 0;
+    }
+    .about .about-content .personal-info .info-item p span{
+        display: block;
+        margin-left: 0;
+    }
+}
+@media (max-width:992px){
+    .contact .contact-info-item,
+    .portfolio .portfolio-item,
+    .service .service-item{
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .home .home-info{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .home .home-img{
+        display: none;
+    }
+}
+@media (max-width:770px){
+    .contact .contact-form .col-12,
+    .contact .contact-form .col-6,
+    .contact .contact-info-item,
+    .portfolio .portfolio-item,
+    .service .service-item,
+    .about .about-content .education,
+    .about .about-content .experience,
+    .about .about-content .skills,
+    .about .about-content .personal-info{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
 }
