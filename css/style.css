@@ -267,6 +267,7 @@ h3.my-profession{
     margin-bottom: 70px;
     font-size: 20px;
     color: var(--text-black-700);
+    text-align: justify;
 }
 .home .home-img img{
     height: 400px;
@@ -336,6 +337,7 @@ h3.my-profession{
     font-size: 16px;
     line-height: 25px;
     color: var(--text-black-700);
+    text-align: justify;
 }
 .about .about-content .personal-info{
     flex: 0 0 60%;
@@ -554,7 +556,7 @@ h3.my-profession{
 }
 .portfolio .portfolio-heading h2{
     color: var(--text-black-900);
-    font-weight: 500;
+    font-weight: 600;
     
 }
 .portfolio .portfolio-item{
@@ -606,6 +608,12 @@ h3.my-profession{
     text-transform: capitalize;
     margin: 15px 0 5px;
 }
+.contact .contact-info-item a{
+    font-size: 16px;
+    line-height: 25px;
+    color: var(--text-black-700);
+    font-weight: 700;
+}
 .contact .contact-info-item p{
     font-size: 16px;
     line-height: 25px;
@@ -648,6 +656,12 @@ h3.my-profession{
     height: 50px;
     padding: 0 50px;
 }
+
+/* for justifying the contact section
+.contact .container .contact-changes{
+    justify-content: space-around;
+    align-items: center;
+} */
 
 
 /*media queries*/
@@ -708,6 +722,12 @@ h3.my-profession{
         text-align: center;
     }
 }
+@media (max-width:775px){
+    .home .home-info .btn{
+        width: 100%;
+        text-align: center;
+    }
+}
 @media (max-width:770px){
     .contact .contact-form .col-12,
     .contact .contact-form .col-6,
@@ -720,6 +740,10 @@ h3.my-profession{
     .about .about-content .personal-info{
         flex: 0 0 100%;
         max-width: 100%;
+    }
+    /*Setting button width*/
+    .contact .contact-form .btn{
+        width: 100%;
     }
 }
 @media (max-width:1410px){
