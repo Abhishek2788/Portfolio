@@ -58,8 +58,11 @@ ul,li{
     margin: auto;
 }
 .section .container{
-    padding-top: 60px;
+    padding-top: 80px;
     padding-bottom: 70px;
+}
+#home{
+    padding-top: 30px; /*added for upper padding*/
 }
 .row{
     display: flex;
@@ -286,8 +289,8 @@ h3.my-profession{
     height: 80px;
     border-bottom: 10px solid var(--skin-color);
     border-right: 10px solid var(--skin-color);
-    right: 10px;
-    bottom: 20px;
+    right: 40px;
+    bottom: 100px;
     /* right: 20px;
     bottom: -40px; */
 }
@@ -298,13 +301,13 @@ h3.my-profession{
     height: 80px;
     border-top: 10px solid var(--skin-color);
     border-left: 10px solid var(--skin-color);
-    left: 10px;
+    left: 50px;
     top: -40px;
     /* left: -20px;
     top: -40px; */
 }
 .home .home-img img{
-    height: 400px;
+    height: 300px;
     border-radius: 10px;
 }
 
@@ -338,15 +341,16 @@ h3.my-profession{
     flex: 0 0 60%;
     max-width: 60%;
     margin-top: 40px;
+    overflow: hidden;
 }
 .about .about-content .personal-info .info-item{
     flex: 0 0 50%;
     max-width: 50%;
 }
 .about .about-content .personal-info .info-item p{
-    font-weight: 600;
+    font-weight: 700;
     padding: 10px 0;
-    font-size: 16px;
+    font-size: 14px;
     color: var(--text-black-900);
     border-bottom: 1px solid var(--bg-black-50);
 }
@@ -358,10 +362,16 @@ h3.my-profession{
 }
 .about .about-content .personal-info .buttons{
     margin-top: 30px;
+    /*added to fit cv button */
+    /* width: 100%; 
+    background-color: yellow; */
 }
 .about .about-content .personal-info .buttons .btn{
     margin-right: 15px;
     margin-top: 10px;
+    /*added to fit cv button */
+    /* width: 100%; 
+    text-align: center; */
 }
 .about .about-content .skills{
     flex: 0 0 40%;
@@ -665,8 +675,37 @@ h3.my-profession{
         flex: 0 0 100%;
         max-width: 100%;
     }
-    .home .home-img{
+    /* .home .home-img{
         display: none;
+    } */
+    .home .home-img{
+        flex: 0 0 100%;
+        max-width: 100%;
+        /* background-color: red; */
+        text-align: center;
+        position: relative;
+        padding-top: 150px;
+        border-radius: 50%;
+    } /*added to put image in center*/
+    .home .home-img img{
+        border-radius: 50%;
+        border: 5px solid var(--skin-color);
+    } /*added to put image border*/
+    .home-img::after{
+        display: none;
+    }
+    .home-img::before{
+        display: none;
+    }
+
+    .about .about-content .personal-info .buttons{
+        /*added to fit cv button */
+        width: 100%; 
+    }
+    .about .about-content .personal-info .buttons .btn{
+        /*added to fit cv button */
+        width: 100%; 
+        text-align: center;
     }
 }
 @media (max-width:770px){
@@ -683,3 +722,75 @@ h3.my-profession{
         max-width: 100%;
     }
 }
+@media (max-width:1410px){
+    .home-img::after{
+        right: 20px;
+        bottom: 100px;
+    }
+    .home-img::before{
+        left: 10px;
+        top: -40px;
+    }
+}
+@media (max-width:1383px){
+    .home-img::after{
+        right: 20px;
+        bottom: 140px;
+    }
+    .home-img::before{
+        left: 10px;
+        top: -40px;
+    }
+}
+@media (max-width:1276px){
+    .home-img::after{
+        right: 20px;
+        bottom: 180px;
+    }
+    .home-img::before{
+        left: 10px;
+        top: -40px;
+    }
+}
+@media (max-width:1255px){
+    .home-img::after{
+        right: 10px;
+        bottom: 180px;
+    }
+}
+@media (max-width:1207px){
+    .home-img::after{
+        right: 0px;
+        bottom: 160px;
+    }
+}
+@media (max-width:1196px){
+    .home-img::after{
+        right: 40px;
+        bottom: 100px;
+    }
+    .home-img::before{
+        left: 30px;
+        top: -40px;
+    }
+}
+@media (max-width:1109px){
+    .home-img::after{
+        right: 40px;
+        bottom: 130px;
+    }
+}
+@media (max-width:1086px){
+    .home-img::after{
+        right: 30px;
+        bottom: 140px;
+    }
+}
+@media (max-width:1020px){
+    .home-img::after{
+        right: 30px;
+        bottom: 160px;
+    }
+}
+
+
